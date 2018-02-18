@@ -1,80 +1,33 @@
+/*GENERAL*/
 body {
-  color: rgb(9,26,62);
+  /*old*/
+  /*color: rgb(9,26,62);*/
+  color: #f2f2f2;
+  color: #e7dfdd;
+  /*background-color: #0b0c10;*/
+  background-color: #0e0b16;
   font-family: "Tenor Sans", sans-serif;
-
   margin: 0px;
   text-align: center;
+  /*background-image: url(./photo.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;*/
 }
 
 a {
   text-decoration: none;
 }
 
-label {
-  display: block;
-}
-
-.my-container {
+.container {
   display: flex;
 }
 
-.main-content {
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#name {
-  font-family: 'Archivo Black', sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 200px;
-  letter-spacing: 0.2em;
-}
-
-.text-block {
-  font-family: 'Work Sans', sans-serif;
-}
-
-.pitch-block {
-  font-family: 'Work Sans', sans-serif;
-}
-
-@media (min-width: 1100px) {
-  .text-block {
-    padding: 5% 20%;
-  }
-
-  .pitch-block {
-    padding: 10% 20%;
-  }
-}
-
-@media (max-width: 1100px) {
-  .text-block {
-    padding: 5% 5%;
-  }
-
-  .pitch-block {
-    padding: 10% 5%;
-  }
-}
-
-.pitch-container {
-  background-color: #f4eee1;
-  width: 100%;
-}
-
+/*ICONS AT BOTTOM*/
 .icon-container {
   margin-top: 50px;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
-  background-color: white;
 }
 
 .inner-icon-container {
@@ -92,21 +45,35 @@ label {
   background-color: blue;
 }
 
-.bite {
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-family: 'Archivo Black', sans-serif;
+/*BUTTONS*/
+.btn {
+  box-shadow: none;
+  background: none;
+  width: 150px;
+  padding: 10px 0px;
+  transition: 0.25s;
+  border: 1px solid blue;
+  color: #c5c6c7;
 }
 
-.work-header {
-  letter-spacing: 0.2em;
-  background-image: url(./HW-4.svg);
-  height: 375px;
+.btn:hover {
+  background-color: blue;
+  color: #c5c6c7;
+  cursor: pointer;
 }
 
+.btn a {
+  color: rgb(9,26,62);
+}
 
+.button-container {
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 320px;
+}
+
+/*PORTFOLIO STUFF - FINE*/
 .portfolio-role {
   font-style: italic;
 }
@@ -129,81 +96,70 @@ label {
   }
 }
 
-.button-container {
-  margin: auto;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 370px;
-}
-
 .portfolio-title {
   padding: 50px 0px;
   margin: 70px auto;
+/*  background-color: #e8e6d9;
+  background-color: #1f2833;
+  background-color: #182628;*/
 }
 
 #first-title {
   margin-top: 0px;
 }
 
-.btn {
-  box-shadow: none;
-  background: none;
-  width: 150px;
-  padding: 10px 0px;
-  transition: 0.25s;
-  border: 1px solid blue;
+/*TEXT BLOCKS*/
+.text-block {
+  font-family: 'Work Sans', sans-serif;
 }
 
-.btn:hover {
-  background-color: blue;
-  color: white;
-  cursor: pointer;
+@media (min-width: 1100px) {
+  .text-block {
+    padding: 5% 20%;
+  }
 }
 
-.btn a {
-  color: rgb(9,26,62);
+@media (max-width: 1100px) {
+  .text-block {
+    padding: 5% 5%;
+  }
 }
 
-.portfolio-title {
-  background-color: #e8e6d9;
+/*SECTIONS*/
+#name, #work-header, #brooklyn, #title {
+  letter-spacing: 0.3em;
 }
 
-.a-section, #name {
+.a-section {
+  height: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Archivo Black', sans-serif;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
-.bite  {
-  height: 375px;
-
+.bg-odd {
+/*  background-color: #e8e6d9;
+  background-color: #1f2833;
+  background-color: #182628;*/
 }
 
-#name {
+#name, #title {
   background-image: url(./HW.svg);
-  height: 375px;
-}
-
-#brooklyn {
-  font-family: 'Archivo Black', sans-serif;
-  letter-spacing: 0.2em;
-}
-
-#title {
-  background-color: #e8e6d9;
-  background-image: url(./HW.svg);
-  height: 375px;
-  font-family: 'Archivo Black', sans-serif;
-  letter-spacing: 0.2em;
+  /*background-image: url(./photo.png);*/
 }
 
 #brooklyn {
   background-image: url(./HW-2.svg);
-  height: 375px;
 }
 
-.pitch-container {
-  background-color: #e8e6d9;
+#pitch {
   background-image: url(./HW-3.svg);
-  height: 375px;
+}
+
+#work-header {
+  background-image: url(./HW-4.svg);
 }
