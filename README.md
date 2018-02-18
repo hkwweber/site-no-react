@@ -1,3 +1,3 @@
-# ufo-stackathon
+# quick personal site
 
-### Sounds and visuals of UFO sightings
+### very simple - no react or anything
