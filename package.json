@@ -29,21 +29,9 @@
     "webpack-livereload-plugin": "^1.0.0"
   },
   "dependencies": {
-    "bluebird": "^2.10.2",
     "body-parser": "^1.13.3",
-    "bootstrap": "3.3.5",
-    "d3": "^4.12.2",
     "express": "^4.13.3",
-    "fs": "0.0.1-security",
-    "jsonfile": "^4.0.0",
-    "mapbox-gl": "^0.40.1",
-    "nunjucks": "^2.5.2",
-    "papaparse": "^4.3.6",
     "path": "^0.12.7",
-    "pg": "^4.5.5",
-    "pg-hstore": "^2.3.2",
-    "sequelize": "^4.4.0",
-    "tone": "^0.11.11",
     "uglify-js": "^3.3.8",
     "volleyball": "^1.4.1"
   }

@@ -6,58 +6,83 @@
   <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width initial-scale=1.0'>
-    <title>MULDER MAP</title>
-    <link rel="shortcut icon" href="/alien-pic.ico" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.css' rel='stylesheet' />
+    <title>HANNAH WEBER</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Tenor+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/style.css" />
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
   <body>
-    <div class="custom-popup" id='map'></div>
-    <div id="mulder">
-    <h1 id ="hey">MULDER MAP</h1>
-  </div>
-    <div id='controls'>
-    <div class="day-container" id="total-counter"></div>
-    <div id="ufo-sightings" >UFO SIGHTINGS</div>
-    <div class="day-container"><span id="month-counter" class="dayC"> </span><span id="day-counter" class="dayC"></span><span id="year-counter" class="dayC">1999</span></div>
-
     <div>
-      <div id="vis-button-container">
-    <button id="show-markers" class="btn btn-default">I WANT TO BELIEVE</button>
-  </div>
-      <div id="month-selector-container" class="selector-container">
-      <label for="months">PICK A MONTH: </label>
-    <select id="month-selector" name="months">
-      <option>JANUARY</option>
-      <option>FEBRUARY</option>
-      <option>MARCH</option>
-      <option>APRIL</option>
-      <option>MAY</option>
-      <option>JUNE</option>
-      <option>JULY</option>
-      <option>AUGUST</option>
-      <option>SEPTEMBER</option>
-      <option>OCTOBER</option>
-      <option>NOVEMBER</option>
-      <option>DECEMBER</option>
-    </select>
-  </div>
-  <div id="mood-selector-container" class="selector-container">
-        <label for="moods">PICK A MOOD: </label>
-        <select id="mood-selector" name="moods">
-          <option>SPOOKY</option>
-          <option>MELANCHOLY</option>
-        </select>
+      <div class="main-content">
+        <div class="a-section bite" id="name">HI, I'M HANNAH</div>
+        <div class="a-section bite" id="title">I'M A FULL STACK SOFTWARE ENGINEER</div>
+        <div class="a-section bite" id="brooklyn">I LIVE IN BROOKLYN</div>
       </div>
-    <div id="btn-div">
-    <button id="start-button" class="btn btn-default">LISTEN</button>
-  </div>
-  </div>
+      <div class="a-section my-container pitch-container">
+        <div class="pitch-block">
+        During my five years working in e-commerce buying and merchandising, I worked with product managers and engineers to improve internal tools and make customer-facing UX improvements. I realized that I wanted to learn how to build the software I loved using, which led me to start learning online and eventually to enroll in Grace Hopper Academy. I'm currently a full stack developer specializing in JavaScript, Node, Express, and React, and I'm to learn new technologies.
+        </div>
+      </div>
+      <div class="a-section bite work-header">
+        <div>MY WORK</div>
+      </div>
+      <div id="first-title" class="portfolio-title bg-power">
+        <h2>POWER PROSE</h2>
+        <h5 class="portfolio-role">Full Stack Developer</h5>
+        <h5 class="portfolio-date">2/2018</h5>
+      </div>
+      <img class="portfolio-image" src="/power-prose.png">
+      </img>
+      <div class="text-block portfolio-description">
+        A web application that uses speech-to-text and tone analysis technology to help women decrease their use of qualifying words and phrases, which can demean their authority and diminish their contributions. Developed in two weeks with a group of four engineers with Node.js, PostgreSQL, Express.js, React, Redux, Websockets, Watson Speech-to-Text and Tone Analysis APIs, Recharts, and Material-UI.
+      </div>
+      <div class="container button-container">
+        <a target="_blank" href="https://github.com/power-prose/power-prose"><button class="btn btn-power">GITHUB</button></a>
+        <a target="_blank" href="https://powerprose.herokuapp.com/"><button class="btn btn-power">WEBSITE</button></a>
+      </div>
+      <div class="portfolio-title bg-mulder">
+        <h2>MULDER MAP</h2>
+        <h5 class="portfolio-role">Sole Developer</h5>
+        <h5 class="portfolio-date">1/2018</h5>
+      </div>
+      <img class="portfolio-image" src="/mulder-map.png">
+      </img>
+      <div class="text-block portfolio-description">
+        Inspired by a fondness for The X-Files, this four-day hackathon project is an interactive visual and musical representation of UFO sighting data (from the National UFO Reporting Center) that generates unique musical sequences at runtime based on the geography and timing of each sighting.
+        Using Tone.js, I assigned different geographical regions unique but harmonizing notes. Every measure of time represents one day of data, and the time intervals between notes are proportional to the actual intervals between reported UFO sightings. Each musical sequence is generated based on user choices of month and musical mood. As the sequence plays, markers appear in the exact location of the corresponding ufo sighting, with an additional feature of informational popups about each reported incident.
+        Built with JavaScript, Node.js, Tone.js, D3.js, and Mapbox.
+      </div>
+      <div class="container button-container">
+        <a target="_blank" href="https://github.com/hkwweber/ufo-stackathon"><button class="btn btn-mulder">GITHUB</button></a>
+        <a target="_blank" href="https://mulder-map.herokuapp.com/"><button class="btn btn-mulder">WEBSITE</button></a>
+      </div>
+      <div class="portfolio-title bg-plant">
+        <h2>I LOVE PLANT</h2>
+        <h5 class="portfolio-role">Full Stack Developer</h5>
+        <h6 class="portfolio-date">1/2018</h6>
+      </div>
+      <img class="portfolio-image" src="/i-love-plant.png">
+      </img>
+      <div class="text-block portfolio-description">
+        An e-commerce plant store built in one week with a team of three other developers
+        Designed database schema and implemented backend and frontend of shopping cart and checkout
+        Built with Node.js, Express.js, Sequelize, React-Redux, Bootstrap, Mocha, and Chai
+      </div>
+      <div class="container button-container">
+        <a target="_blank" href="https://github.com/i-love-plant/grace-shopper"><button class="btn btn-plant">GITHUB</button></a>
+        <a target="_blank" href="https://i-love-plant.herokuapp.com/"><button class="btn btn-plant">WEBSITE</button></a>
+      </div>
+    <div class="my-container icon-container">
+      <div class="my-container inner-icon-container">
+      <a target="_blank" href="mailto:hkw.weber@gmail.com"><img class="contact-icon" src="/black-envelope.png" /></a>
+      <a target="_blank" href="https://github.com/hkwweber"><img class="contact-icon" src="/github-logo.png" /></a>
+      <a target="_blank" href="https://www.linkedin.com/in/hkwweber/"><img class="contact-icon" src="/icons8-linkedin.png" /></a>
     </div>
-    <div id="app"></div>
+  </div>
+  </div>
     <script src="./bundle.js"></script>
   </body>
 </html>

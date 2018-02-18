@@ -1,126 +1,209 @@
 body {
-  font-family: sans-serif;
-  color: black;
+  color: rgb(9,26,62);
+  font-family: "Tenor Sans", sans-serif;
+
+  margin: 0px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  display: block;
+}
+
+.my-container {
+  display: flex;
+}
+
+.main-content {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#name {
+  font-family: 'Archivo Black', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  letter-spacing: 0.2em;
+}
+
+.text-block {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.pitch-block {
+  font-family: 'Work Sans', sans-serif;
+}
+
+@media (min-width: 1100px) {
+  .text-block {
+    padding: 5% 20%;
+  }
+
+  .pitch-block {
+    padding: 10% 20%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .text-block {
+    padding: 5% 5%;
+  }
+
+  .pitch-block {
+    padding: 10% 5%;
+  }
+}
+
+.pitch-container {
+  background-color: #f4eee1;
+  width: 100%;
+}
+
+.icon-container {
+  margin-top: 50px;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
   background-color: white;
 }
 
-body {
-  margin: 0;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.inner-icon-container {
+  width: 200px;
+  justify-content: space-between;
 }
 
-#map {
-      position:absolute;
-      width: 100%;
-      height: 100%;
-    }
-
-.alien {
-  height: 24px;
+.contact-icon {
+  height: 2rem;
+  padding: 7px;
+  transition: 0.5s;
 }
 
-#test {
-  background-color: black
+.contact-icon:hover {
+  background-color: blue;
 }
 
-h1 {
-color: white;
+.bite {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Archivo Black', sans-serif;
 }
 
-#mulder {
-  z-index: 10;
-  position: absolute;
-  margin-top: 15px;
-  margin-left: 28px;
+.work-header {
+  letter-spacing: 0.2em;
+  background-image: url(./HW-4.svg);
+  height: 375px;
 }
 
-#controls {
-  z-index: 10;
-  position: absolute;
-  margin-top: 110px;
-  margin-left: 28px;
+
+.portfolio-role {
+  font-style: italic;
 }
 
-#day-counter {
+.portfolio-image {
+  border: 3px solid #d3d3d3;
+  background-color: white;
+  margin: auto;
+}
+
+@media (min-width: 1100px) {
+  .portfolio-image {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .portfolio-image {
+    width: 95%;
+  }
+}
+
+.button-container {
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 370px;
+}
+
+.portfolio-title {
+  padding: 50px 0px;
+  margin: 70px auto;
+}
+
+#first-title {
+  margin-top: 0px;
+}
+
+.btn {
+  box-shadow: none;
+  background: none;
+  width: 150px;
+  padding: 10px 0px;
+  transition: 0.25s;
+  border: 1px solid blue;
+}
+
+.btn:hover {
+  background-color: blue;
   color: white;
-  margin-top: 10px;
+  cursor: pointer;
+}
+
+.btn a {
+  color: rgb(9,26,62);
+}
+
+.portfolio-title {
+  background-color: #e8e6d9;
+}
+
+.a-section, #name {
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.bite  {
+  height: 375px;
 
 }
 
-/*.dayC {
-  color: white;
-  margin-top: 10px;
-  font-size: 30px;
-  font-weight: bold;
-}*/
-
-.day-container {
-  margin-top: 10px;
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
+#name {
+  background-image: url(./HW.svg);
+  height: 375px;
 }
 
-.mapboxgl-popup {
-  max-width: 250px;
+#brooklyn {
+  font-family: 'Archivo Black', sans-serif;
+  letter-spacing: 0.2em;
 }
 
-.mapboxgl-popup-content {
-  background-color: #717575;
-  font-family: sans-serif;
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
+#title {
+  background-color: #e8e6d9;
+  background-image: url(./HW.svg);
+  height: 375px;
+  font-family: 'Archivo Black', sans-serif;
+  letter-spacing: 0.2em;
 }
 
-#hey {
-  font-size: 60px;
-  color: #8AFF49;
-  font-weight: bold;
+#brooklyn {
+  background-image: url(./HW-2.svg);
+  height: 375px;
 }
 
-#vis-button-container {
-  /*margin-top: 30px*/
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-
-label {
-  color: white;
-}
-
-#show-markers {
-
-  color: #8AFF49;
-  background-color: grey;
-  font-weight: bold;
-}
-
-#total-counter {
-  color: #ABB7BF;
-  font-size: 95px;
-  margin-bottom: -20px;
-  margin-top: -25px;
-}
-
-#ufo-sightings {
-  /*margin-top: 10px;*/
-  margin-bottom: 10px;
-  color: #ABB7BF;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-#btn-div {
-  margin-top: 10px;
-}
-
-#start-button {
-  font-weight: bold;
-  background-color: #8AFF49;
+.pitch-container {
+  background-color: #e8e6d9;
+  background-image: url(./HW-3.svg);
+  height: 375px;
 }
