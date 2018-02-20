@@ -7,24 +7,27 @@
 //   devtool: "source-map",
 // }
 
-const LiveReloadPlugin = require('webpack-livereload-plugin')
-const isDev = process.env.NODE_ENV === 'development'
+var path = require('path');
+
+const LiveReloadPlugin = require("webpack-livereload-plugin");
+const isDev = process.env.NODE_ENV === "development";
 
 module.exports = {
-  entry: './client/index.js',
+  entry: "./client/index.js",
   output: {
     path: __dirname,
-    filename: './public/bundle.js'
+    filename: "./public/bundle.js"
   },
-  devtool: 'source-map',
-   module: {
+
+  devtool: "source-map",
+  module: {
     loaders: [
       {
         test: /jsx?$/,
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel-loader',
+        loader: "babel-loader",
         query: {
-          presets: ['es2015']
+          presets: ["es2015"]
         }
       }
     ],
@@ -33,6 +36,5 @@ module.exports = {
   // When we're in development, we can use this handy live-reload plugin
   // to refresh the page for us every time we make a change to our client-side
   // files. It's like `nodemon` for the front end!
-  plugins: isDev ? [new LiveReloadPlugin({appendScriptTag: true})] : []
-}
-
+  plugins: isDev ? [new LiveReloadPlugin({ appendScriptTag: true })] : []
+};
