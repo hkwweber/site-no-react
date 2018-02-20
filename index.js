@@ -1,7 +1,3 @@
-import { TimelineMax, TweenMax, Linear } from 'gsap';
-import ScrollMagic from 'scrollmagic';
-import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
-
 $(function() {
 	let controller = new ScrollMagic.Controller();
 
@@ -100,7 +96,7 @@ $(function() {
 // work header tween
 
 let workHeaderTween = new TweenMax.to("#work-header", 2, {
-	letterSpacing: ".8em",
+	letterSpacing: "0.8em",
 	fontSize: "2em"
 })
 
@@ -110,49 +106,6 @@ let workHeaderCont = new ScrollMagic.Scene({
 })
 
 workHeaderCont.setTween(workHeaderTween).addTo(controller);
-
-	//HW TWEENS!!!!
-
-	// let hwTween = new TweenMax.to(".test-path", 1, {
-	// 	fill: "#66fcf1"
-	// })
-	// let hwCont = new ScrollMagic.Scene({
-	// 	triggerElement: "#title",
-	// 	triggerHook: "onCenter",
-	// 	reverse: true,
-	// 	duration: 200
-	// })
-	// hwCont
-	// 	.setTween(hwTween)
-	// 	.addTo(controller);
-
-	// let hwTween2 = new TweenMax.to(".test-path", 1, {
-	// 	fill: "#5cdb95"
-	// })
-	// let hwCont2 = new ScrollMagic.Scene({
-	// 	triggerElement: "#brooklyn",
-	// 	triggerHook: "onCenter",
-	// 	reverse: true,
-	// 	duration: 200
-	// })
-	// hwCont2
-	// 	.setTween(hwTween2)
-	// 	.addTo(controller);
-
-	// let hwTweenDisappear = new TweenMax.to("#test", 1, {
-	// 	opacity: 0
-	// })
-	// let hwContEnd = new ScrollMagic.Scene({
-	// 	triggerElement: "#work-header",
-	// 	// triggerHook: "onEnter",
-	// 	reverse: true,
-	// 	duration: 375
-	// })
-	// hwContEnd
-	// 	.setTween(hwTweenDisappear)
-	// 	.addTo(controller);
-
-
 
 });
 
