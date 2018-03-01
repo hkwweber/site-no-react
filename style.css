@@ -197,6 +197,15 @@ transition: all 0.5s;
   background-repeat: no-repeat;
 }
 
+@media (max-width: 1100px) {
+  #name {
+    min-height: 200px;
+  }
+  #title {
+    min-height: 200px;
+  }
+}
+
 #test {
   position: fixed;
   margin: auto;
